@@ -1,6 +1,6 @@
 #from .context import sample #double check what this bit does
 def test_strmatch():
-    assert isinstance('text',str) #consider using basestring?
+    assert 1==2#isinstance(2,str) #consider using basestring?
     
     
 
