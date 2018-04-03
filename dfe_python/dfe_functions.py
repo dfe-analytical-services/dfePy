@@ -1,5 +1,17 @@
-def add_two_nums(x,y):
-	return x + y;
+class Arithmetic:
+    def __init__(self,x,y):
+        ''' Constructor for this class. '''
+        # Create some member animals
+        self.members = [1,2]
+#        self.members = ['Tiger', 'Elephant', 'Wild Cat']
+# 
+# 
+#    def printMembers(self):
+#        print('Printing members of the Mammals class')
+#        for member in self.members:
+#            print('\t%s ' % member)
+    def add_two_nums(self,x,y):
+        return x + y;
 
 #Func to join CSVs together
 #import csv #
@@ -41,6 +53,6 @@ def read_sqltable(SQLserver,SQLdbname,SQLtablename):
 #Func to set up reproducible workflow folder structure
 def create_project(path,proj_name):
     baseDir = path + proj_name
-    folder_list = ["data","code"]
+    folder_list = ["doc","tests"]
     for f in folder_list:
         os.makedirs(os.path.join(baseDir,f), exist_ok = True)
